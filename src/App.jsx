@@ -9,15 +9,11 @@ class App extends Component {
   render() {
     return (
       <div className="background">
-      <Link to="/">
-        <h1 className="title">cers</h1>
-        <p className="subtitle">Centralized Emergency Relief System</p>
-      </Link>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-      </Switch>
-    </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+        </Switch>
+      </div>
     );
   }
 }
