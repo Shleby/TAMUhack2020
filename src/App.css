@@ -7,9 +7,17 @@
   height: 80px;
 }
 
+.App-eheader {
+background-color: red;
+height: 75px;
+padding: 20px;
+color: white;
+
+}
+
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #17ACDF;
+  height: 300px;
   padding: 20px;
   color: white;
 }
