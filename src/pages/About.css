@@ -35,16 +35,23 @@ h9 {
 h7 {
   margin-left: 17cm;
   color: black;
-  font-size: 26pt;
+  font-size: 30pt;
 }
 
 h6 {
-  margin-right: 17cm;
-  margin-left: 13cm;
+  margin-right: 7cm;
+  margin-left: 8cm;
   color: black;
-  font-size: 18pt;
+  font-size: 14pt;
 }
 .link-abt {
   color: white;
   text-decoration: none;
+}
+
+h16 {
+  margin-right: 7cm;
+  margin-left: 6.5cm;
+  color:#5dc3e6;
+  font-size: 27pt;
 }

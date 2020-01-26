@@ -14,9 +14,12 @@ class volunteer extends React.Component {
           <br></br>
           <br></br>
           <h13>Volunteer/Donation Interest Form</h13>
+          <br></br><br></br>
+          <h14>Help your community!</h14><br></br><br></br>
+          <h12> If you would like to be placed on our Volunteer/Donation </h12><br></br>
+          <h12>list in case of Emergency in your area, Please fill out form.</h12>
 
-          <br></br>
-          <br></br>
+          <br></br><br></br>
           <h12>Full Name </h12>
           <h>
             <input></input>
@@ -63,6 +66,9 @@ class volunteer extends React.Component {
           <h>
             <input></input>
           </h>
+<br></br><br></br><br></br><br></br>
+
+          <h12><button>Submit</button></h12>
           <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <h12> For more Donation information please check out these websites</h12>
 <br></br><br></br>

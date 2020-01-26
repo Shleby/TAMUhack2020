@@ -74,11 +74,18 @@ p {
 }
 
 h13 {
-  margin-left: 16cm;
+  font-size:30pt;
+  margin-left: 13.5cm;
   font-weight: bold;
 }
 
 h12 {
   margin-left: 16cm;
+  font-weight: 300;
+}
+
+h14 {
+ color: #17acdf;
+  margin-left: 19cm;
   font-weight: 300;
 }
