@@ -12,7 +12,12 @@ let webSearchApiClient = new WebSearchAPIClient(credentials);
 class Data extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showPopup: true, newsString: "", fireImage: "" };
+    this.state = {
+      showPopup: true,
+      newsString: "",
+      fireImage: "",
+      article: ""
+    };
   }
 
   componentDidMount() {
@@ -29,13 +34,16 @@ class Data extends React.Component {
     webSearchApiClient.web
       .search("fires")
       .then(result => {
-        let properties = ["images", "news"];
+        let properties = ["images", "news", "videos"];
         for (let i = 0; i < properties.length; i++) {
           if (result[properties[i]]) {
             this.setState({ newsString: result.news.value[0].name });
             this.setState({ fireImage: result.images.value[0].contentUrl });
+            this.setState({ article: result.videos.value[0].contentUrl });
             console.log(result.images.value[0]);
             console.log(this.state.newsString);
+            console.log(this.state.article);
+            console.log(this.state.fireImage);
           } else {
             console.log(`No ${properties[i]} data`);
           }
@@ -99,6 +107,8 @@ class Data extends React.Component {
           <Header className="stick" />
           <p>{this.state.newsString}</p>
           <img src={this.state.fireImage} alt="fire" />
+
+          <youtube videoId={this.state.article}></youtube>
         </div>
       </div>
     );

@@ -41,6 +41,7 @@ class Card extends React.Component {
             <option value="30">Victim of Disaster</option>
             <option value="40">Victim of Abuse</option>
             <option value="50">Person ready to to improve my situation</option>
+            <option value="200">Person with a disability</option>
           </select>
         </div>
       ); // eslint-disable-next-line
@@ -49,7 +50,11 @@ class Card extends React.Component {
         <div className="card">
           <h3 className="card-h3">I want ... / My goals are ...</h3>
           <br />
-          <select onChange={this.onSecondChange} className="card-select" value="20">
+          <select
+            onChange={this.onSecondChange}
+            className="card-select"
+            value="20"
+          >
             <option selected value="20">
               Select...
             </option>
@@ -64,7 +69,11 @@ class Card extends React.Component {
         <div className="card">
           <h3 className="card-h3">I want ... / My goals are ...</h3>
           <br />
-          <select onChange={this.onSecondChange} className="card-select" value="30">
+          <select
+            onChange={this.onSecondChange}
+            className="card-select"
+            value="30"
+          >
             <option selected value="30">
               Select...
             </option>
@@ -81,7 +90,11 @@ class Card extends React.Component {
         <div className="card">
           <h3 className="card-h3">I want ... / My goals are ...</h3>
           <br />
-          <select onChange={this.onSecondChange} className="card-select" value="40">
+          <select
+            onChange={this.onSecondChange}
+            className="card-select"
+            value="40"
+          >
             <option selected value="40">
               Select...
             </option>
@@ -96,7 +109,11 @@ class Card extends React.Component {
         <div className="card">
           <h3 className="card-h3">I want ... / My goals are ...</h3>
           <br />
-          <select onChange={this.onSecondChange} className="card-select" value="50">
+          <select
+            onChange={this.onSecondChange}
+            className="card-select"
+            value="50"
+          >
             <option selected value="50">
               Select...
             </option>
@@ -107,6 +124,27 @@ class Card extends React.Component {
           </select>
         </div>
       );
+    } else if (this.state.secondSelection && this.state.firstValue == "200") {
+      return (
+        <div className="card">
+          <h3 className="card-h3">I want ... / My goals are ...</h3>
+          <br />
+          <select
+            onChange={this.onSecondChange}
+            className="card-select"
+            value="200"
+          >
+            <option selected value="200">
+              Select...
+            </option>
+            <option value="220">To search for accessbile points on maps</option>
+            <option value="230">Find rehabilitation centers</option>
+            <option value="240">
+              Find buildings that are accessbile to me
+            </option>
+          </select>
+        </div>
+      ); // eslint-disable-next-line
     } else if (this.state.thirdSelection) {
       return (
         <div className="card">
