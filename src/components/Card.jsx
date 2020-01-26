@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 // eslint-disable-next-line
-import ArrayComponent from "../components/ArrayComponent";
+
 class Card extends React.Component {
   constructor(props) {
     super(props);
