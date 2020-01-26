@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../LOGO.svg';
+import Header from './Header';
 import "./Home.css"
 import Popup from './Popup';
 
@@ -33,12 +33,7 @@ class Home extends React.Component {
             }  
             </div>  
              <div className="Home">
-               
-                <div className="Home-header">
-                    <img src={logo} className="Home-logo" alt="logo" />
-                    <h2>Next Steps</h2>
-                </div>
-               
+                <Header/>
             </div>
             </div>
         )

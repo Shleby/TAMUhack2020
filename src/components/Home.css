@@ -1,32 +1,18 @@
 .Home {
     text-align: center;
-  }
+}
   
-  .Home-logo {
+.Home-logo {
     height: 100px;
-  }
+}
   
-  .Home-eheader {
+.Home-eheader {
   background-color: red;
   height: 75px;
   padding: 20px;
   color: white;
+}
   
-  }
-  
-  .Home-header {
-    background-color: #17ACDF;
-    height: 300px;
-    padding: 20px;
-    color: white;
-  }
-  
-  .Home-intro {
+.Home-intro {
     font-size: large;
-  }
-  
-  @keyframes Home-logo-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  
+}
