@@ -1,6 +1,5 @@
 import React from "react";
-import "./Home.css";
-
+import "../pages/Home.css";
 class Memo extends React.Component {
   render() {
     return (
