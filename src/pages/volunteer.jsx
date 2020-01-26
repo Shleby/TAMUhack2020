@@ -63,6 +63,16 @@ class volunteer extends React.Component {
           <h>
             <input></input>
           </h>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<h12> For more Donation information please check out these websites</h12>
+<br></br><br></br>
+<h12><a href="https://donate.wwf.org.au/donate/koala-crisis/koala-crisis?t=AP0120O01&f=41120-213&gclid=CjwKCAiAjrXxBRAPEiwAiM3DQkGTNRJsCWcJFSKxTFZEc7XBe_3--8H26WiQKbYnJeOgZbPh6cVWlxoCTD4QAvD_BwE#gs.uxcf6z">Austrialian Wild Fire</a> </h12>
+<br></br><br></br>
+<h12><a href="https://www.actionagainsthunger.org/donate/save-lives-and-end-hunger?utm_medium=paid+search&utm_source=google&utm_campaign=Issues+Causes&utm_adgroup=Emergency&utm_term=relief%20disaster&gclid=CjwKCAiAjrXxBRAPEiwAiM3DQtbHYilnzKPHH-VSCr5a5glGn7PscaNyic8DnllYPXcCxOKEo1HDUhoC4LQQAvD_BwE">Action Against Hunger</a>  </h12>
+<br></br><br></br>
+<h12><a href="www.redcross.org">Red Cross</a>  </h12>
+<br></br><br></br>
+
         </div>
       </div>
     );
