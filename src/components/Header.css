@@ -1,33 +1,65 @@
 .header {
+  display: block;
+  position: sticky;
+  width: 100%;
   background-color: #17acdf;
-  height: 80px;
-  padding: 20px;
-  color: white;
+  height: 100px;
   font-size: xx-large;
+}
+.link {
+  color: white;
 }
 p {
   float: left;
   margin-top: 60px;
-  margin-left: -100px;
+  margin-left: 140px;
   font-size: large;
 }
-h1 {
+.next {
   float: left;
+  margin-top: -1px;
+  margin-left: 130px;
+  position: absolute;
+  font-weight: 500;
 }
 select {
   float: inline-end;
 }
 .logo {
+  margin-top: 5px;
   margin-left: 40px;
   margin-right: 20px;
   float: left;
   height: 80px;
 }
-h2 {
+.h2 {
   float: inline-end;
   text-decoration: none;
   color: white;
-  font-size: xx-large;
+  font-size: x-large;
   margin-right: 40px;
+  margin-top: 30px;
   font-weight: lighter;
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary {
+    width: 67%;
+  }
+  #secondary {
+    width: 30%;
+    margin-left: 3%;
+  }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary {
+    width: 100%;
+  }
+  #secondary {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
 }

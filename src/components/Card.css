@@ -1,0 +1,8 @@
+.card {
+  border-style: outset;
+  border-width: thick;
+  border-radius: 10px;
+  width: 40%;
+  min-height: 600px;
+  margin: 0 auto;
+}

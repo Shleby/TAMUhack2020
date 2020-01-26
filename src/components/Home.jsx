@@ -2,7 +2,8 @@ import React from "react";
 import Header from "./Header";
 import "./Home.css";
 import Popup from "./Popup";
-
+import Card from "./Card";
+import Memo from "./memo";
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -29,7 +30,9 @@ class Home extends React.Component {
           ) : null}
         </div>
         <div className="Home">
-          <Header />
+          <Header className="stick" />
+          <Memo className="memo" />
+          <Card />
         </div>
       </div>
     );
