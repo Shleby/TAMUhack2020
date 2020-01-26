@@ -22,7 +22,7 @@ class About extends React.Component {
           <h7>What We Do</h7>
           <br></br>
           <br></br>
-          <h6>Life is intense, and immensely huge. So is the internet--the internet has a LOT of information.</h6><br></br>
+          <h6>Life is intense, and immensely huge. So is the internet--the internet has a LOT of information.</h6>
           <h6>We provide a novel service to sort through that information to better help you find what </h6>
           <h6>you're looking for. Powered by Microsoft Azure, our powerful search function allows us to </h6>
           <h6>                     refine the search results and sift through all that information.</h6><br></br>
