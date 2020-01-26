@@ -9,8 +9,8 @@ class Popup extends React.Component {
           X
         </button>
         <h10>
-          IMPORTANT:if you or someone you know is in a life-threatening
-          situation, call[location_based_number]
+          IMPORTANT: If you or someone you know is in a life-threatening
+          situation, call [location_based_number]
         </h10>
       </div>
     );
