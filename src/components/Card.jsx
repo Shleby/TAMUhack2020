@@ -11,6 +11,7 @@ class Card extends React.Component {
     };
   }
   onChange = e => {
+    // eslint-disable-next-line
     const selectedVal = parseInt(e.target.value);
     this.setState({ firstValue: selectedVal });
     this.setState({ secondSelection: true, firstSelection: false });
