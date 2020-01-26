@@ -49,7 +49,7 @@ class Card extends React.Component {
         <div className="card">
           <h3 className="card-h3">I want ... / My goals are ...</h3>
           <br />
-          <select onChange={this.onSecondChange} className="card-select">
+          <select onChange={this.onSecondChange} className="card-select" value="20">
             <option selected value="20">
               Select...
             </option>
@@ -64,7 +64,7 @@ class Card extends React.Component {
         <div className="card">
           <h3 className="card-h3">I want ... / My goals are ...</h3>
           <br />
-          <select onChange={this.onSecondChange} className="card-select">
+          <select onChange={this.onSecondChange} className="card-select" value="30">
             <option selected value="30">
               Select...
             </option>
@@ -81,7 +81,7 @@ class Card extends React.Component {
         <div className="card">
           <h3 className="card-h3">I want ... / My goals are ...</h3>
           <br />
-          <select onChange={this.onSecondChange} className="card-select">
+          <select onChange={this.onSecondChange} className="card-select" value="40">
             <option selected value="40">
               Select...
             </option>
@@ -96,7 +96,7 @@ class Card extends React.Component {
         <div className="card">
           <h3 className="card-h3">I want ... / My goals are ...</h3>
           <br />
-          <select onChange={this.onSecondChange} className="card-select">
+          <select onChange={this.onSecondChange} className="card-select" value="50">
             <option selected value="50">
               Select...
             </option>
