@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import "./Home.css";
 import Popup from "./Popup";
+import Stmt from "./Stmt";
 
 class Home extends React.Component {
   constructor(props) {
@@ -30,8 +31,13 @@ class Home extends React.Component {
         </div>
         <div className="Home">
           <Header />
+          {/* <Stmt /> */}
         </div>
+        
+        
       </div>
+      
+      
     );
   }
 }
