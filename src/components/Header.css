@@ -1,6 +1,33 @@
 .header {
-    background-color: #17ACDF;
-    height: 300px;
-    padding: 20px;
-    color: white;
+  background-color: #17acdf;
+  height: 80px;
+  padding: 20px;
+  color: white;
+  font-size: xx-large;
+}
+p {
+  float: left;
+  margin-top: 60px;
+  margin-left: -100px;
+  font-size: large;
+}
+h1 {
+  float: left;
+}
+select {
+  float: inline-end;
+}
+.logo {
+  margin-left: 40px;
+  margin-right: 20px;
+  float: left;
+  height: 80px;
+}
+h2 {
+  float: inline-end;
+  text-decoration: none;
+  color: white;
+  font-size: xx-large;
+  margin-right: 40px;
+  font-weight: lighter;
 }
