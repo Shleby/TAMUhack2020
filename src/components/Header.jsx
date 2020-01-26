@@ -17,7 +17,7 @@ class Header extends React.Component {
           <h2 className="h2">About Us</h2>
         </Link>
         <Link to="/volunteer/">
-          <h2 className="h2">volunteer</h2>
+          <h2 className="h2">Volunteer</h2>
         </Link>
       </div>
     );

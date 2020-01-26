@@ -1,50 +1,46 @@
 .header2 {
-    background-color: #5dc3e6;
-    height: 300px;
-    padding-top: 2cm;
-    
-    color:white;
-   
-  }
+  background-color: #5dc3e6;
+  height: 300px;
+  padding-top: 2cm;
 
-   h8{
-    font-size: 56pt;
-    margin-left: 0cm;
-  } 
-
-  h9{
-    color: whitesmoke;
-    font-size: 20pt;
-      margin-left: 17cm;
-      margin-top: 20cm;
-    
-  } 
-
-  .logo-temp{
-    margin-left: 14cm;
-    margin-right: 20px;
-    float: left;
-    height: 80px;
+  color: white;
 }
 
-.box{
-color:black;
+h8 {
+  font-size: 56pt;
+  margin-left: 0cm;
+}
+
+h9 {
+  color: whitesmoke;
+  font-size: 20pt;
+  margin-left: 17cm;
+  margin-top: 20cm;
+}
+
+.logo-temp {
+  margin-left: 14cm;
+  margin-right: 20px;
+  float: left;
+  height: 80px;
+}
+
+.box {
+  color: black;
   margin-top: 2cm;
   background-color: white;
-height: 1000px;
+  height: 1000px;
 }
 
 h7 {
-  
-  margin-left:17cm;
+  margin-left: 17cm;
   color: black;
   font-size: 26pt;
-  
 }
 
-h6{
-margin-right: 17cm;
-margin-left:13cm;
-color: black;
-font-size: 18pt;
+h6 {
+  margin-right: 17cm;
+  margin-left: 13cm;
+  color: black;
+  font-size: 18pt;
 }

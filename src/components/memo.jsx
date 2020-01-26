@@ -6,7 +6,7 @@ class Memo extends React.Component {
     return (
       <div>
         <p className="statement">
-          The world can be a harsh and big place. Feel like you're ready to
+          Life can be rough. Feel like you're ready to
           <br />
           start gearing torwards success? Need that extra helping hand? <br />
           We'll help you on your <b>next steps.</b>

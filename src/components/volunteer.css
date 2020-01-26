@@ -22,9 +22,6 @@
     position: absolute;
     font-weight: 500;
   }
-  select {
-    float: inline-end;
-  }
   .logo {
     margin-top: 5px;
     margin-left: 40px;

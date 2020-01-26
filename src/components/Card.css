@@ -5,4 +5,11 @@
   width: 40%;
   min-height: 600px;
   margin: 0 auto;
+  text-align: center;
+  background-color: #5dc3e6;
+}
+
+.card-h3 {
+  font-size: xx-large;
+  font-weight: 300;
 }
