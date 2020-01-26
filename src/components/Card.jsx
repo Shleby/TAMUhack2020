@@ -30,7 +30,6 @@ class Card extends React.Component {
             <option value="30">Disaster Victim</option>
             <option value="40">Person ready to to improve my situation</option>
           </select>
-          <p>{this.state.firstSelection}</p>
         </div>
       );
     } else if (this.state.secondSelection) {

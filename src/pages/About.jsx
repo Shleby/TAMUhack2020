@@ -1,16 +1,19 @@
 import React from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 import logo from "../LOGO.svg";
+
 class About extends React.Component {
   render() {
     return (
       <div className="header2">
-        <img src={logo} className="logo-temp" alt="logo-temp" />
-        <h8>
-          NextSteps <br></br>
-        </h8>
-        <h9>We're Here to Help</h9>
-
+        <Link className="link-abt" to="/">
+          <img src={logo} className="logo-temp" alt="logo-temp" />
+          <h8>
+            NextSteps <br></br>
+          </h8>
+          <h9>We're Here to Help</h9>
+        </Link>
         <div className="box">
           <br></br>
           <br></br>
