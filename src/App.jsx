@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Volunteer from "./components/volunteer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Volunteer from "./pages/volunteer";
 class App extends Component {
   render() {
     return (
