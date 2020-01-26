@@ -1,17 +1,17 @@
-
-.popup {  
-  text-align: center; 
+.popup {
+  text-align: center;
   font-size: 25px;
-    background-color:red;
-  
-    height: 30px;
-    padding: 40px;
-    color: white;
-  }  
-  h6 {height:20px}
-  
-  .button {
-    
-    float: right;
-  }
-  
+  background-color: red;
+  height: 30px;
+  padding: 10px;
+  color: white;
+}
+
+h6 {
+  position: absolute;
+  margin: 5px;
+}
+
+.button {
+  float: right;
+}
