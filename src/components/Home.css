@@ -48,3 +48,13 @@
     border: none;
   }
 }
+
+.Stmt {
+
+    background-color: blueviolet;
+    color: black;
+    height: 20px;
+    padding: 10px;
+    
+    
+    }

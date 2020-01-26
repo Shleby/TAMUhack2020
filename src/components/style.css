@@ -1,14 +1,14 @@
 .popup {
   text-align: center;
-  font-size: 25px;
-  background-color: red;
+  font-size: 22px;
+  background-color:red ;
   height: 30px;
   padding: 10px;
   color: white;
 }
 
 h6 {
-  position: absolute;
+  float: center;
   margin: 5px;
 }
 

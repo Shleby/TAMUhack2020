@@ -4,6 +4,7 @@ import "./Home.css";
 import Popup from "./Popup";
 import Card from "./Card";
 import Memo from "./memo";
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
