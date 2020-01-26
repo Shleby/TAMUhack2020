@@ -68,19 +68,19 @@
 
     color:black;
       margin-top: 2cm;
-      background-color: white);
+      background-color: white;
     height: 1000px;
     }
     
 h13 {
   
-  
-    margin-left: 16cm;
+  font-size: 33pt;
+    margin-left: 20cm;
     font-weight: bold;
   }
 
 h12 { 
-    
-    margin-left: 16cm;
+    font-size: 22pt;
+    margin-left: 20cm;
     font-weight: 300;
   }
