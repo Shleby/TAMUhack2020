@@ -16,8 +16,8 @@ class Header extends React.Component {
         <Link to="/about/">
           <h2 className="h2">About Us</h2>
         </Link>
-        <Link to="/resources/">
-          <h2 className="h2">Resources</h2>
+        <Link to="/volunteer/">
+          <h2 className="h2">volunteer</h2>
         </Link>
       </div>
     );
