@@ -1,23 +1,54 @@
 import React from 'react';
 import logo from '../LOGO.svg';
+import "./Home.css"
+import Popup from './Popup';
+
 
 class Home extends React.Component {
+    constructor(props){  
+  super(props);  
+  this.state = { showPopup: true };  
+  }  
+
+    togglePopup() {  
+        this.setState({  
+       showPopup: !this.state.showPopup  
+        });  
+   }  
+  
     render() {
         return(
-            <div className="App">
-                <div className="App-eheader">
-                    <h3>Important:if you or someone you know is in a life-threatening situation, call[location_based_number]</h3>
-                </div>
-                <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+            <div>
+            <div>  
+               
+                {/* popup*/}
+                   
+            
+                {this.state.showPopup ?  
+            <Popup  
+                      text='Click "Close Button" to hide popup'  
+                      closePopup={this.togglePopup.bind(this)}  
+            />  
+            : null  
+            }  
+            </div>  
+             <div className="Home">
+               
+                <div className="Home-header">
+                    <img src={logo} className="Home-logo" alt="logo" />
                     <h2>Next Steps</h2>
                 </div>
-                <p className="App-intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
+               
             </div>
-        );
+            </div>
+        )
     }
 }
+
+
+
+
+
+
 
 export default Home;
