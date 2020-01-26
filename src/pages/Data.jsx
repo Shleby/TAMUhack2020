@@ -12,7 +12,7 @@ let webSearchApiClient = new WebSearchAPIClient(credentials);
 class Data extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showPopup: true, results: [] };
+    this.state = { showPopup: true, newsString: "", fireImage: "" };
   }
 
   componentDidMount() {
@@ -29,12 +29,13 @@ class Data extends React.Component {
     webSearchApiClient.web
       .search("fires")
       .then(result => {
-        let properties = ["images", "webPages", "news", "videos"];
+        let properties = ["images", "news"];
         for (let i = 0; i < properties.length; i++) {
           if (result[properties[i]]) {
-            this.setState({ results: result });
-            console.log("div injected");
-            return <div className="results">{this.state.results}</div>;
+            this.setState({ newsString: result.news.value[0].name });
+            this.setState({ fireImage: result.images.value[0].contentUrl });
+            console.log(result.images.value[0]);
+            console.log(this.state.newsString);
           } else {
             console.log(`No ${properties[i]} data`);
           }
@@ -43,44 +44,18 @@ class Data extends React.Component {
       .catch(err => {
         throw err;
       });
-    try {
-      if (result.webPages.value.length > 0) {
-        // find the first web page
-        let firstWebPagesResult = result.webPages.value[0];
-        if (firstWebPagesResult) {
-          console.log("Webpage Results: " + result.webPages.value.length);
-          console.log("First web page name: " + firstWebPagesResult.name);
-          console.log("First web page URL: " + firstWebPagesResult.url);
-        } else {
-          console.log("Couldn't find web results!");
-        }
-      } else {
-        throw new TypeError();
-      }
-    } catch (err) {
-      if (err instanceof TypeError) {
-        console.log("Didn't see any Web data..");
-      } else {
-        throw err;
-      }
-    }
-
     // Images
     try {
       if (result.images.value.length > 0) {
         // find the first image result
         let firstImageResult = result.images.value[0];
+
         if (firstImageResult) {
-          console.log("Image Results: " + result.images.value.length);
+          console.log("Image newsString: " + result.images.value.length);
           console.log("First Image result name: " + firstImageResult.name);
           console.log("First Image result URL: " + firstImageResult.contentUrl);
-          return (
-            <div>
-              <img alt="first img" src={firstImageResult}></img>
-            </div>
-          );
         } else {
-          console.log("Couldn't find image results!");
+          console.log("Couldn't find image newsString!");
         }
       } else {
         throw TypeError();
@@ -99,11 +74,11 @@ class Data extends React.Component {
         // find the first news result
         let firstNewsResult = result.news.value[0];
         if (firstNewsResult) {
-          console.log("News Results: " + result.news.value.length);
+          console.log("News newsString: " + result.news.value.length);
           console.log("First news result name: " + firstNewsResult.name);
           console.log("First news result URL: " + firstNewsResult.url);
         } else {
-          console.log("Couldn't find news results!");
+          console.log("Couldn't find news newsString!");
         }
       } else {
         throw new TypeError();
@@ -115,29 +90,6 @@ class Data extends React.Component {
         throw err;
       }
     }
-
-    // Videos
-    try {
-      if (result.videos.value.length > 0) {
-        // find the first video result
-        let firstVideoResult = result.videos.value[0];
-        if (firstVideoResult) {
-          console.log("Video Results: " + result.videos.value.length);
-          console.log("First video result name: " + firstVideoResult.name);
-          console.log("First video result URL: " + firstVideoResult.contentUrl);
-        } else {
-          console.log("Couldn't find video results!");
-        }
-      } else {
-        throw new TypeError();
-      }
-    } catch (err) {
-      if (err instanceof TypeError) {
-        console.log("Didn't see any Video data..");
-      } else {
-        throw err;
-      }
-    }
   }
 
   render() {
@@ -145,6 +97,8 @@ class Data extends React.Component {
       <div>
         <div className="Data">
           <Header className="stick" />
+          <p>{this.state.newsString}</p>
+          <img src={this.state.fireImage} alt="fire" />
         </div>
       </div>
     );
